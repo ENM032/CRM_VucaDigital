@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/customer_item_border">
+
+        <ImageView
+            android:id="@+id/more_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:padding="2dp"
+            android:src="@drawable/more"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Image Colour will change depending on status-->
+        <ImageView
+            android:id="@+id/displayOpportunityStatusImage"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelStage" />
+
+        <TextView
+            android:id="@+id/labelStage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Stage" />
+
+        <TextView
+            android:id="@+id/valueText"
+            android:layout_width="149dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="49dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/displayOpportunityStatusImage"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Value" />
+
+
+        <TextView
+            android:id="@+id/opportunityNameText"
+            android:layout_width="236dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/labelStage"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Opportunity Name" />
+
+        <TextView
+            android:id="@+id/labelName"
+            android:layout_width="127dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="23dp"
+            android:text="Customer Name:"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/displayOpportunityStatusImage"
+            tools:text="Customer Name:" />
+
+        <TextView
+            android:id="@+id/labelPriority"
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Priority: "
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelName"
+            tools:text="Priority:" />
+
+        <TextView
+            android:id="@+id/labelForStatus"
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Status:"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelPriority"
+            tools:text="Status:" />
+
+        <TextView
+            android:id="@+id/labelForCreation"
+            android:layout_width="95dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Creation Date:"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelStatus"
+            tools:text="Creation Date:" />
+
+
+        <TextView
+            android:id="@+id/displayName"
+            android:layout_width="140dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp"
+            android:text="TextView"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/valueText"
+            tools:text="Customer Name" />
+
+        <!--Colour will change depending on status-->
+        <TextView
+            android:id="@+id/displayPriority"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_corners"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/displayName"
+            tools:text="Priority" />
+
+
+        <TextView
+            android:id="@+id/displayStatus"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/customer_item_border"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/displayPriority"
+            tools:text="Status" />
+
+        <TextView
+            android:id="@+id/labelStatus"
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Status: "
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelPriority"
+            tools:text="Status:" />
+
+        <TextView
+            android:id="@+id/labelCreation"
+            android:layout_width="95dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Creation Date:"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelStatus"
+             />
+
+        <TextView
+            android:id="@+id/displayCreationDate"
+            android:layout_width="105dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/displayStatus"
+            tools:text="Creation Date:" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

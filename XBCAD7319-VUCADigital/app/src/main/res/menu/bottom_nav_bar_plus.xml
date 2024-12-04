@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:title="@string/home"
+        android:icon="@drawable/home_icon" />
+
+    <item
+        android:id="@+id/navigation_account"
+        android:title="@string/customers"
+        android:icon="@drawable/customer_icon"/>
+
+    <!-- The middle item will be invisible, acting as a placeholder for the popup tray -->
+    <item
+        android:id="@+id/navigation_placeholder"
+        android:visible="false"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_tasks"
+        android:title="@string/tasks"
+        android:icon="@drawable/clipboard_icon" />
+
+    <item
+        android:id="@+id/navigation_opportunities"
+        android:title="@string/opportunities"
+        android:icon="@drawable/opportunity_icon" />
+</menu>
